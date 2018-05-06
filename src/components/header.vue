@@ -7,8 +7,8 @@
     </div>
     <div class="mynav">
       <ul class="nav navbar-nav">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Sponsors</a></li>
+        <li><router-link to="/portfolio">Portfolio</router-link></li>
+        <li><router-link to="/portfolio">Sponsors</router-link></li>
         <li><a href="#">Participants</a></li>
         <li><a href="#">Vendors</a></li>
         <li><a href="#">Entertainment</a></li>
