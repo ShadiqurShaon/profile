@@ -1,26 +1,24 @@
 <template>
- <div>
-     <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Profile</a>
-    </div>
-    <div class="mynav">
-      <ul class="nav navbar-nav">
-        <li><router-link to="/portfolio">Portfolio</router-link></li>
-        <li><router-link to="/portfolio">Sponsors</router-link></li>
-        <li><a href="#">Participants</a></li>
-        <li><a href="#">Vendors</a></li>
-        <li><a href="#">Entertainment</a></li>
-        
-      </ul>
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul> -->
-    </div>
-  </div>
-</nav>
- </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Profile</a>
+        </div>
+        <div class="mynav">
+          <ul class="nav navbar-nav">
+            <li><router-link to="/portfolio">Portfolio</router-link></li>
+            <li><router-link to="/portfolio">Sponsors</router-link></li>
+            <li><a href="#">Participants</a></li>
+            <li><a href="#">Vendors</a></li>
+            <li><a href="#">Entertainment</a></li>
+            
+          </ul>
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </nav>
 </template>
 
 <style>

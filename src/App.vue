@@ -3,7 +3,6 @@
     <app-header></app-header>
     <router-view></router-view>
     <app-footer></app-footer>
-  
   </div>
 </template>
 
@@ -13,15 +12,10 @@ import Footer from './components/footer.vue'
 
 export default {
   components:{
-    'app-header':Header,
-    'app-footer':Footer
+    'app-header': Header,
+    'app-footer': Footer
   },
   name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
 }
 </script>
 
