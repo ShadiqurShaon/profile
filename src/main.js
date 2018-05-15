@@ -8,20 +8,22 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import firebase from 'firebase'
+import config from 'config'
 
-var config = {
-  apiKey: "AIzaSyCKgVDDMYuMwWU9O9b0C28nIEKVlVTSHP8",
-  authDomain: "profile-e916a.firebaseapp.com",
-  databaseURL: "https://profile-e916a.firebaseio.com",
-  projectId: "profile-e916a",
-  storageBucket: "profile-e916a.appspot.com",
-  messagingSenderId: "283123027809"
-};
 firebase.initializeApp(config);
 
 
 Vue.use(BootstrapVue);
 Vue.use(vueRouter);
+
+var serviceAccount = require('../../serviceAccountKey.json');
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: 'https://profile-e916a.firebaseio.com'
+});
+
+
 
 
 const messaging = firebase.messaging();
